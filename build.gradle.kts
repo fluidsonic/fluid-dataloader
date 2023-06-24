@@ -4,7 +4,7 @@ plugins {
 	id("io.fluidsonic.gradle") version "1.3.1"
 }
 
-fluidLibrary(name = "dataloader", version = "0.1.0")
+fluidLibrary(name = "dataloader", version = "0.2.0")
 
 fluidLibraryModule(description = "Kotlin version of Facebook's DataLoader library using coroutines") {
 	language {

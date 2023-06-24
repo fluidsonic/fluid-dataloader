@@ -24,7 +24,7 @@ Installation
 
 ```kotlin
 dependencies {
-	implementation("io.fluidsonic.dataloader:fluid-dataloader:0.1.0")
+	implementation("io.fluidsonic.dataloader:fluid-dataloader:0.2.0")
 }
 ```
 
