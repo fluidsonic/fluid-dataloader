@@ -1,8 +1,7 @@
 import io.fluidsonic.gradle.*
-import org.jetbrains.kotlin.gradle.plugin.*
 
 plugins {
-	id("io.fluidsonic.gradle") version "1.2.1"
+	id("io.fluidsonic.gradle") version "1.3.1"
 }
 
 fluidLibrary(name = "dataloader", version = "0.1.0")
@@ -15,16 +14,16 @@ fluidLibraryModule(description = "Kotlin version of Facebook's DataLoader librar
 	targets {
 		common {
 			dependencies {
-				api(kotlinx("coroutines-core", "1.6.4"))
+				api(kotlinx("coroutines-core", "1.7.1"))
 			}
 
 			testDependencies {
-				api(kotlinx("coroutines-test", "1.6.4"))
+				api(kotlinx("coroutines-test", "1.7.1"))
 			}
 		}
 
 		darwin()
-		js(KotlinJsCompilerType.BOTH)
+		js()
 		jvm()
 	}
 }

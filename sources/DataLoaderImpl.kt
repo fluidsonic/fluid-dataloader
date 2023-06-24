@@ -168,7 +168,7 @@ internal class DataLoaderImpl<in Key, Value, CacheKey>(
 	companion object {
 
 		// FIXME dispatcher?
-		val defaultBatchScheduleFunction: DataLoader<*, *>. (CoroutineScope, suspend () -> Unit) -> Unit = { scope, callback ->
+		val defaultBatchScheduleFunction: DataLoader<*, *>.(CoroutineScope, suspend () -> Unit) -> Unit = { scope, callback ->
 
 			// FIXME enqueue at end of tick
 			scope.launch {
